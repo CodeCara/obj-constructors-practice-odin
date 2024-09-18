@@ -7,14 +7,15 @@ this.read = true;
 function displayInfo() {
     if (this.read = true) {textVariable = 'read'}
     else {textVariable = 'not read yet'};
-    // console.log(`${this.title} by ${this.author}, ${this.pages}) ${textVariable}`);
-    console.log(`${title} by ${author}, ${pages} pages ${textVariable}`);
+  
+    return (`${title} by ${author}, ${pages} pages ${textVariable}`);
   
    
 }
 displayInfo();
-
+console.log(displayInfo());
 }
+
 
 const bookA = new makeBook('GreatTitle', 'GreatAuthor', '70', 'true');
 
